@@ -16,6 +16,9 @@ public:
     Pet();
     Pet(const std::string& name, const std::string& species, int age, int hungerLevel);
 
+    // Destructor 
+    virtual ~Pet();
+
     // Accessors (Getters)
     std::string getName() const;
     std::string getSpecies() const;
@@ -33,6 +36,9 @@ public:
 
     // Output Function
     void printInfo() const;
+
+    // Virtual Function 
+    virtual void makeSound() const;
 };
 
 #endif
