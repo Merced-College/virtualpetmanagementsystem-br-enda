@@ -9,6 +9,8 @@
                 "-g",
                 "main.cpp",
                 "Pet.cpp",
+                "Dog.cpp",
+                "Parrot.cpp",
                 "-o",
                 "main"
             ],
@@ -17,7 +19,7 @@
                 "isDefault": true
             },
             "problemMatcher": ["$gcc"],
-            "detail": "Generated task by VS Code"
+            "detail": "Compile project with Pet, Dog, and Parrot classes"
         }
     ]
 }

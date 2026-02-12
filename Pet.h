@@ -16,28 +16,23 @@ public:
     Pet();
     Pet(const std::string& name, const std::string& species, int age, int hungerLevel);
 
-    // Destructor 
+    // Virtual destructor for polymorphic deletion
     virtual ~Pet();
 
-    // Accessors (Getters)
+    // Accessors
     std::string getName() const;
     std::string getSpecies() const;
     int getAge() const;
     int getHungerLevel() const;
 
-    // Mutators (Setters)
+    // Mutators
     void setName(const std::string& name);
     void setSpecies(const std::string& species);
     void setAge(int age);
     void setHungerLevel(int level);
 
-    // CompareTo
-    int compareTo(const Pet& other) const; // Returns -1, 0, or 1 based on name comparison
-
-    // Output Function
-    void printInfo() const;
-
-    // Virtual Function 
+    // Virtual methods so derived types can override behavior
+    virtual void printInfo() const;
     virtual void makeSound() const;
 };
 
